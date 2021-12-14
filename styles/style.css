@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EDD2F3;
+    font-family: 'montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    /* padding: 10%; */
+    margin: auto;
+    margin-top: 100px;
+    background-color: #FFFCDC;
+}
+
+.left {
+    flex: 3;
+    background-color: #39A2DB;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.photo {
+    /* box-shadow: 5px 5px gray; */
+    /* border-radius: 50%; */
+    /* width: 100%; */
+    /* height: 200px; */
+    /*these does not needed*/
+    margin-top: 20px;
+}
+
+.address,
+.hard-skills,
+.soft-skills {
+    margin: 30px auto;
+}
+
+.hard-skills>li {
+    list-style: none;
+}
+
+.soft-skills>li {
+    list-style: none;
+}
+
+.right {
+    flex: 7;
+    background-color: #A2DBFA;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.hobbies>li,
+.contact>li {
+    list-style: none;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+}
